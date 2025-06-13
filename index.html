@@ -27,8 +27,8 @@
         const namespace = 'rektstars';
         const counterName = 'visits'; // A descriptive name for this specific counter
 
-        const apiUrl = `https://api.counterapi.dev/v1/${namespace}/${counterName}/up`;
-
+        const url = `https://api.counterapi.dev/v1/${namespace}/${counterName}/up`;
+        const apiUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`;
         fetch(apiUrl)
             .then(response => {
                 if (!response.ok) {
