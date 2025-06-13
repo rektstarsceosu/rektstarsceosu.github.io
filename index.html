@@ -6,6 +6,10 @@
     <title>rektstars</title>
     <link rel="stylesheet" href="css/style.css"> </head>
 <body>
+    <main>
+        <p>glad you are here</p>
+        <p>you are the <span id="count">(thinking)</span>th visitor!</p>
+    </main>
     <header>
         <h1>why im here?</h1>
     </header>
@@ -18,5 +22,34 @@
     <footer>
         <p>copyleft 2025 RektStars</p>
     </footer>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const namespace = 'rektstars';
+        const counterName = 'visits'; // A descriptive name for this specific counter
+
+        const apiUrl = `https://api.counterapi.dev/v1/${namespace}/${counterName}/up`;
+
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`error status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                const element = document.getElementById('count');
+                if (element) {
+                    element.textContent = data.count;
+                }
+            })
+            .catch(error => {
+                console.error('api error', error);
+                const element = document.getElementById('count');
+                if (element) {
+                    element.textContent = 'open your js you fucker'; 
+                }
+            });
+    });
+    </script>
 </body>
 </html>
