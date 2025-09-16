@@ -1,1 +1,0 @@
-# rektstarsceosu.github.io
