@@ -21,10 +21,7 @@
 title: "!! rekt stars blog !!"
 email: "rektstarsceosu@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
-      DON'T PANIC
-      this message is to you agent! if you encounter this site in wild wild internet
-      please ignore it. it is under construction! i have no idea what i'm doin.
-baseurl: "/" # the subpath of your site, e.g. /blog
+      DON'T PANIC!
 url: "http://blog.rektstars.net" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  "rektstarsceosu"
 
