@@ -18,15 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: !! rekt stars blog !!
-email: rektstarsceosu@gmail.com
+title: "!! rekt stars blog !!"
+email: "rektstarsceosu@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
       DON'T PANIC
       this message is to you agent! if you encounter this site in wild wild internet
       please ignore it. it is under construction! i have no idea what i'm doin.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://blog.rektstars.net" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  rektstarsceosu
+github_username:  "rektstarsceosu"
 
 # Build settings
 theme: minima
